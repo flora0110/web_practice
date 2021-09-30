@@ -1,0 +1,19 @@
+#all{
+    margin-left: 35px;
+}
+#plus {
+    float: left;
+    line-height:100px;
+    margin-right: 10px;
+}
+body {
+  background-color: #99ccff;
+}
+.time{
+    width: 40px;
+}
+#cnt {
+    margin-left: 60px;
+    background: #3fbe6b;
+    color : white;
+}

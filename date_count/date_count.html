@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="date_count.js"></script>
+    <link href="date_count.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <p>起始日期</p>
+    <table>
+        <tr>
+            <td>日:</td>
+            <td></td>
+            <td>月:</td>
+            <td></td>
+            <td>年:</td>
+        </tr>
+        <tr>
+            <td><input id="date" class="time" list="date" name="dd" placeholder = "dd" maxlength="2" title="請輸入1~31代表一個月第幾天的數字"><datalist id="date"></datalist></td>
+            <td>/</td>
+            <td><input id = "month" class="time" list="month" name="mm" placeholder = "mm" maxlength="2" title="請輸入1~12代表第幾個月的數字"><datalist id="month"></datalist></td>
+            <td>/</td>
+            <td><input id="year" class="time" list="year" name="yy" placeholder = "yyyy" maxlength="4" title="請輸入4位西元年"><datalist id="year"></datalist></td>
+        </tr>
+    </table>
+    <button id ="btn">today</button>
+    <div id = "all">
+    <div id="plus">
+        <select>
+            <option value="+">+</option>
+            <option value="-">-</option>
+        </select>
+    </div>
+    <div id="change">
+        <table id="">
+            <tr>
+                <td><input class="year time" placeholder="0" ></td>
+                <td>年</td>
+            </tr>
+            <tr>
+                <td><input class="month time" placeholder="0"></td>
+                <td>月</td>
+            </tr>
+            <tr>
+                <td><input class="week time" placeholder="0"></td>
+                <td>週</td>
+            </tr>
+            <tr>
+                <td><input class="date time" placeholder="0"></td>
+                <td>天</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+    <div id="end">
+        <button id ="cnt">count</button>
+    </div>
+</body>
