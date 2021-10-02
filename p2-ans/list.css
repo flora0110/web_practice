@@ -1,0 +1,10 @@
+.center{
+    text-align: center;
+}
+.add{
+    background-color: #6aa0de;
+}
+span{
+    float:left;
+    margin-left: 200px;
+}

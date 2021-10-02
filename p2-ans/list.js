@@ -10,7 +10,6 @@ updateList(data)
 var now_edit=0;
 var chan_index=0;
 function addData(e){
-    alert(now_edit);
      e.preventDefault();//停止事件
      if(now_edit==0){
          var txt = document.querySelector('.note').value;
@@ -56,6 +55,8 @@ function toggleDone(e){
             $('#bnt1').val("編輯");
             now_edit=1;
             chan_index = index;
+
+            $("#in").val(data[index].content);
         });
     }
 }
@@ -63,8 +64,14 @@ function updateList(items){
     str = '' ;
     var len = items.length;
     for(var i=0;i<len;i++){
-        str += '<li><span>'+ items[i].content+'</span><a href="#" data-kind=0 data-index='+i+'>刪除</a>'+' <a href="#" data-kind=1 data-index='+i+'>編輯</a></li>';
+        str += '<p><span>'+ items[i].content+'</span><a href="#" style="color:green;" data-kind=0 data-index='+i+'>刪除</a>'+' <a href="#" style="color:red;" data-kind=1 data-index='+i+'>編輯</a></p>';
         //用a跳轉到相同畫面來刷新
     }
     list.innerHTML = str;
 }
+$(function(){
+    $('#clear').click(function(){
+        data=[];
+        updateList(data);
+    });
+});

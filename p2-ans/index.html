@@ -2,14 +2,15 @@
 <html>
 <head>
     <script src="../js/jquery-3.6.0.min.js"></script>
-    <!--link href="date_count.css" rel="stylesheet" media="all"-->
+    <link href="list.css" rel="stylesheet" media="all">
 </head>
-<body>
-    <div>
+<body style="color:#6063bf;">
+    <div class="center">
         <label>待辦事項清單</label><br>
-        <input type="text" class="note" placeholder = "例如:買早餐">
-        <input type="button" class="add" value="送出" id="bnt1" data-kind=0>
+        <input type="text" class="note" placeholder = "例如:買早餐" id="in">
+        <input type="button" class="add" value="送出" id="bnt1" data-kind=0 style="color:white;">
         <div class="list"></div>
+        <button id="clear">清除所有項目</button>
     </div>
     <script src="list.js"></script>
 </body>
